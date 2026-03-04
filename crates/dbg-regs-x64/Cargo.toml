@@ -1,0 +1,10 @@
+[package]
+name = "dbg-regs-x64"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+dbg-core = { path = "../dbg-core" }
+nix.workspace = true

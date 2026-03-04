@@ -1,0 +1,11 @@
+[package]
+name = "dbg-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+dbg-core = { path = "../dbg-core" }
+hdrhistogram.workspace = true
+tracing.workspace = true

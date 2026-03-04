@@ -1,0 +1,14 @@
+[package]
+name = "dbg-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+clap.workspace = true
+dbg-core = { path = "../dbg-core" }
+dbg-engine = { path = "../dbg-engine" }
+dbg-linux = { path = "../dbg-linux" }
+tracing.workspace = true
+tracing-subscriber.workspace = true

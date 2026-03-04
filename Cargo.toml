@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "crates/dbg-core",
+    "crates/dbg-engine",
+    "crates/dbg-linux",
+    "crates/dbg-cli", 
+    "crates/dbg-regs-x64",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+authors = ["Amidamaru <ardtimeit@gmail.com>"]
+
+[workspace.dependencies]
+clap = { version = "4.5.57", features = ["derive"] }
+hdrhistogram = "7.5.4"
+nix = { version = "0.31.1", features = ["process", "signal", "ptrace", "fs"] }
+thiserror = "2.0.18"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt"] }
